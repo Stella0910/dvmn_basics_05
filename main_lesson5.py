@@ -87,7 +87,7 @@ LETTERS_MAPPING = {
 
 def main():
     os.makedirs("./cards", exist_ok=True)
-    
+
     for number in range(10):
         fake = Faker("ru_RU")
         name = fake.name()
@@ -113,7 +113,7 @@ def main():
             "luck": random.randint(3, 18),
             "skill_1": runic_skills[0],
             "skill_2": runic_skills[1],
-            "skill_3": runic_skills[2]
+            "skill_3": runic_skills[2],
         }
 
         file_operations.render_template("charsheet.svg",
